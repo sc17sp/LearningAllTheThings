@@ -1,0 +1,23 @@
+p{
+    color: #5a42f5;
+}
+
+#test{
+    color: #520b19;
+}
+
+.hotdog p{
+    color: #a67328;
+}
+.hotdog p.sausage{
+    color: brown;
+}
+.hotdog p.sauce{
+    color: red;
+}
+.hotdog p.mustard{
+    color: yellow;
+}
+.hotdog p.topping{
+    color: #402704
+}
