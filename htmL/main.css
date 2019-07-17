@@ -140,12 +140,15 @@ cite, em{
 */
 
 .primary-footer{
+    color: #648880;
+     font-size: 14px;
     padding-bottom: 44px;
     padding-top: 44px;
 }
 
 .primary-footer small {
     float: left;
+    font-weight: 400;
   }
   
 
@@ -190,6 +193,17 @@ a:hover {
   a {
     color: #648880;
   }
+
+  /*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.primary-nav{
+    font-size: 14px;
+    font-weight: 400;
+}
   
 
   
