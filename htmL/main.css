@@ -21,3 +21,15 @@ p{
 .hotdog p.topping{
     color: #402704
 }
+
+.btn{
+    font-size: 16px;
+}
+
+.btn-danger{
+    background:red;
+}
+
+.btn-success{
+    background: green;
+}
