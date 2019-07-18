@@ -79,6 +79,7 @@ h5{
     color: #a9b2b9;
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 strong{
@@ -91,6 +92,11 @@ cite, em{
 
 .tagline{
     margin: 66px 0 22px 0;
+    text-align: right;
+}
+
+.teaser a:hover h3{
+    color: a9b2b9;
 }
 /*
   ========================================
@@ -118,6 +124,7 @@ cite, em{
 .hero {
     padding: 22px 80px 66px 80px;
     line-height: 44px;
+    text-align: center;
   }
 
   .hero h2{
@@ -201,6 +208,11 @@ a:hover {
   }
   a {
     color: #648880;
+    text-decoration: none;
+  }
+
+  p a{ 
+      border-bottom: 1px solid #dfe2e5;
   }
 
   /*
@@ -212,6 +224,13 @@ a:hover {
 .primary-nav{
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.nav{
+    text-align: right;
 }
   
 
