@@ -1,92 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400" >
+        <meta charset="utf-8">
+        <title>IKEA</title>
     </head>
 
     <body>
         <header>
 
             <h1>
-                <img src="https://www.ikea.com/gb/en/static/ikea-logo.f88b07ceb5a8c356b7a0fdcc9a563d63.svg">
+                <img src="https://www.ikea.com/gb/en/static/ikea-logo.f88b07ceb5a8c356b7a0fdcc9a563d63.svg" class="logo">
             </h1>
             <nav>
 
-                <span>
+                <span class="primary-nav">
 
-                    <a href="#">Place</a>
-                    <a href="#">Place</a>
-                    <a href="#">Place</a>
-                    <a href="#">Place</a>
-                    <a href="#">Place</a>
+                    <a href="#">products V</a>
+                    <a href="#">Rooms V</a>
+                    <a href="#">New at Ikea V</a>
+                    <a href="#">Inspiration V</a>
+                    <a href="#">Offers</a>
                 </span>
 
-                <span>
-                    <a href="#">Place</a>
-                    <a href="#">Place</a>
-                    <a href="#">Place</a>
+                <span class="secondary-nav">
+                    <a href="#"><img src="myProfile.png"></a>
+                    <a href="#"><img src="myList.png"></a>
+                    <a href="#"><img src="shoppingBag.png"></a>
 
                 </span>
             </nav>
-
-            <input type="text" text="Search For ..">
         </header>
+        <div class="group">
 
-        <section>
-            <h2>Make you dream kitchen a reality</h2>
-            <img src="https://www.ikea.com/images/picture-of-a-kitchen-with-high-gloss-grey-turquoise-doors-an-a6e09794b4317e478b5de2ca67b8b6bc.png?f=xxxl/">
-
-            <p> <strong>METOD / MAXIMERA </strong>Base cab f sink+2 fronts/2 drawers<strong>£122,ÖSTERNÄS</strong> Leather handle<strong>
-                £10/2 pack</strong></p>
-
-            <a class="btn">Start Planning now ></a>    
-        </section>
-
-        <section>
-            <section class="grid">
-                <section></section>
-                <section></section>
-            </section>
-        </section>
-        <section>
-
-
-            <h2>See our products in real homes | @ikeauk</h2>
+            <section class="search-container">
             
-            <section class="gird">
-                <section><img src="#"></section><!--
-
-                --><section><img src="#"></section><!--
-
-                --><section><img src="#"></section>
-                <a class="btn">View More</a>
+                <img class="search" src="searchIcon.png">
+                <input class="searchbar" type="text" text="Search For ..">
+                
             </section>
 
-        </section>
 
 
-        <section class="grid">
-            <section> <p><strong>Secure it!</strong>Creating safer homes together!</p></section><!--
-            --><section>
-                <p>We all want our homes to be a safe place. When we work together, we can reduce the risk of accidents </p>
-                <a href="#" class="btn">Creating safer homes together ></a>
+            <section class="top">
+                <h2>Make you dream kitchen a reality</h2>
+                <img class="primary-img"src="https://www.ikea.com/images/picture-of-a-kitchen-with-high-gloss-grey-turquoise-doors-an-a6e09794b4317e478b5de2ca67b8b6bc.png?f=xxxl/">
+    
+                <p class="caption"> <strong>METOD / MAXIMERA </strong>Base cab f sink+2 fronts/2 drawers<strong>£122,ÖSTERNÄS</strong> Leather handle<strong>
+                    £10/2 pack</strong></p>
+    
+                <a class="btn">Start Planning now ></a>    
             </section>
-        </section>
-
-        <section class="grid">
+    
             <section>
-                <img src="#">
-                <P> Ikea alerts customers to ensure use of locking fittings at all times on SUNDVIK changing tablet/chest</P>
+                <section class="grid container">
+                    <section></section>
+                    <section></section>
+                </section>
             </section>
             <section>
-                <img src="#">
-                <p>IKEA recalls SOTSAK SKUMTOP because of undeclared milk.</p>
-             </section>
-        </section>
+    
+    
+                <h2>See our products in real homes | @ikeauk</h2>
+                
+                <section class="gird container">
+                    <section><img src="#"></section><!--
+    
+                    --><section><img src="#"></section><!--
+    
+                    --><section><img src="#"></section>
+                    <a class="btn">View More</a>
+                </section>
+    
+            </section>
+    
+    
+            <section class="grid container">
+                <section> <p><strong>Secure it!</strong>Creating safer homes together!</p></section><!--
+                --><section>
+                    <p>We all want our homes to be a safe place. When we work together, we can reduce the risk of accidents </p>
+                    <a href="#" class="btn">Creating safer homes together ></a>
+                </section>
+            </section>
+    
+            <section class="grid container">
+                <section>
+                    <img src="#">
+                    <P> Ikea alerts customers to ensure use of locking fittings at all times on SUNDVIK changing tablet/chest</P>
+                </section>
+                <section>
+                    <img src="#">
+                    <p>IKEA recalls SOTSAK SKUMTOP because of undeclared milk.</p>
+                 </section>
+            </section>
+        </div>
+        
 
 
 
-        <footer>
+        <footer class="container">
 
             <scetion>
                 <nav>
