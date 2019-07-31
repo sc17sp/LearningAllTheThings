@@ -56,7 +56,10 @@ function triangleType(sideA,sideB,sideC){
 }
 
 function clearResults(){
-    
+    document.getElementById("type").innerHTML = "";
+    document.getElementById("area").innerHTML = "";
+    document.getElementById("perimeter").innerHTML = "";
+    document.getElementById("fail").innerHTML = "";
 }
 
 
