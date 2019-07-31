@@ -28,14 +28,14 @@ function triangleCheck(sideA, sideB, sideC){
     return true;
 }
 
-function getperimeter(sideA, sideB, sideC){
+function getPerimeter(sideA, sideB, sideC){
     let perimeter = sideA + sideB + sideC;
 
     return perimeter;
 }
 
 function getArea(sideA,sideB,sideC){
-    let halfperimeter = getperimeter(sideA,sideB,sideC)/2;
+    let halfperimeter = getPerimeter(sideA,sideB,sideC)/2;
 
     /*Area calculated using herons formula */
     let area = (halfperimeter*(halfperimeter - sideA) * (halfperimeter-sideB) * (halfperimeter-sideC)) ** 0.5;
@@ -77,7 +77,7 @@ function main(){
 
     /* this calculates each bit of information needed */
     let checkResult = triangleCheck(sideA, sideB, sideC);
-    let perimeter = getperimeter(sideA, sideB, sideC);
+    let perimeter = getPerimeter(sideA, sideB, sideC);
     let area = getArea(sideA,sideB,sideC);
     let typeOfTriangle = triangleType(sideA,sideB,sideC);
 
