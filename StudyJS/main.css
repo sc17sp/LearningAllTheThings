@@ -53,7 +53,9 @@ Classes
     margin-top: 0px;
 }
 
-
+.results-container{
+    padding: 20px; 
+}
 
 /* 
 TEXT

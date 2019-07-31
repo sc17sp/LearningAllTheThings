@@ -7,6 +7,7 @@ function getSideLength(sideName){
 
     let sideValue;
     sideValue = document.getElementById(sideName).value;
+    sideValue = Number(sideValue);
     return sideValue;
 }
 
@@ -44,7 +45,7 @@ function getArea(sideA,sideB,sideC){
 
 /* This function simply checks what type of traingle is inputted by checking each sides against one another*/ 
 function triangleType(sideA,sideB,sideC){
-    if (sideA == sideB == sideC){
+    if (sideA == sideB && sideA == sideC && sideC == sideC){
         return "Equilateral";
     }
 
@@ -56,6 +57,10 @@ function triangleType(sideA,sideB,sideC){
 }
 
 function clearResults(){
+    // this clears the input fields and results from any previous uses of application
+    document.getElementById("sideA").value = 0;
+    document.getElementById("sideB").value =0;
+    document.getElementById("sideC").value = 0;
     document.getElementById("type").innerHTML = "";
     document.getElementById("area").innerHTML = "";
     document.getElementById("perimeter").innerHTML = "";
@@ -65,17 +70,18 @@ function clearResults(){
 
 
 function main(){
-    
+    /* Get the length of each side */ 
     let sideA = getSideLength("sideA");
     let sideB = getSideLength("sideB");
     let sideC = getSideLength("sideC");
 
+    /* this calculates each bit of information needed */
     let checkResult = triangleCheck(sideA, sideB, sideC);
     let perimeter = getperimeter(sideA, sideB, sideC);
     let area = getArea(sideA,sideB,sideC);
     let typeOfTriangle = triangleType(sideA,sideB,sideC);
 
-
+    /* This updates the labels in the html file to display the area, type and perimeter*/
     if(checkResult){
         clearResults();
         document.getElementById("type").innerHTML = typeOfTriangle;
