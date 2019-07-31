@@ -77,12 +77,14 @@ function main(){
 
 
     if(checkResult){
+        clearResults();
         document.getElementById("type").innerHTML = typeOfTriangle;
         document.getElementById("area").innerHTML = area;
         document.getElementById("perimeter").innerHTML = perimeter;
         
         
     }else{
+        clearResults();
         document.getElementById("fail").innerHTML = "Input Is Not A Triangle";
     }
 }
