@@ -62,3 +62,18 @@ TEXT
 h1{
     margin-top:0px; 
 }
+
+
+/* 
+buttons
+*/
+.btn{
+    border-radius: 5px;
+    color:black;
+    cursor: pointer;
+    display: inline-block;
+    margin:0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+

@@ -5,21 +5,9 @@
 /*Infinite loop forces the user to keep inputting an answer until break condition is met */
 function getSideLength(sideName){
 
-    let value;
-
-    for(let i=0; i<10;i--){
-        let response = prompt(`Give length of side ${sideName}`);
-        
-         value = Number(response);
-        
-        if(value>0 && value !=NaN){
-            break;
-        }else{
-            alert("That was not a valid numerical input");
-        }
-        
-    }
-    return value;
+    let sideValue;
+    sideValue = document.getElementById(sideName).value;
+    return sideValue;
 }
 
 /* This function checks if the 3 lengths make a triangle or not by checking if the sum of 2 sides is greater than the third */
@@ -54,6 +42,7 @@ function getArea(sideA,sideB,sideC){
     return area;
 }
 
+/* This function simply checks what type of traingle is inputted by checking each sides against one another*/ 
 function triangleType(sideA,sideB,sideC){
     if (sideA == sideB == sideC){
         return "Equilateral";
@@ -66,17 +55,32 @@ function triangleType(sideA,sideB,sideC){
     return "Isosceles";
 }
 
-let sideA = getSideLength("A");
-let sideB = getSideLength("B");
-let sideC = getSideLength("C");
+function clearResults(){
+    
+}
 
-let checkResult = triangleCheck(sideA, sideB, sideC);
 
-let perimeter = getperimeter(sideA, sideB, sideC);
 
-let area = getArea(sideA,sideB,sideC);
+function main(){
+    
+    let sideA = getSideLength("sideA");
+    let sideB = getSideLength("sideB");
+    let sideC = getSideLength("sideC");
 
-let typeOfTriangle = triangleType(sideA,sideB,sideC);
+    let checkResult = triangleCheck(sideA, sideB, sideC);
+    let perimeter = getperimeter(sideA, sideB, sideC);
+    let area = getArea(sideA,sideB,sideC);
+    let typeOfTriangle = triangleType(sideA,sideB,sideC);
 
-alert(typeOfTriangle);
+
+    if(checkResult){
+        document.getElementById("type").innerHTML = typeOfTriangle;
+        document.getElementById("area").innerHTML = area;
+        document.getElementById("perimeter").innerHTML = perimeter;
+        
+        
+    }else{
+        document.getElementById("fail").innerHTML = "Input Is Not A Triangle";
+    }
+}
 
