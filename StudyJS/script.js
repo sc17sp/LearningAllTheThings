@@ -13,15 +13,15 @@ function getSideLength(sideName){
 
 /* This function checks if the 3 lengths make a triangle or not by checking if the sum of 2 sides is greater than the third */
 function triangleCheck(sideA, sideB, sideC){
-    if(sideA + sideB < sideC){
+    if(sideA + sideB <= sideC){
         return false;
     }
 
-    if(sideB + sideC < sideA){
+    if(sideB + sideC <= sideA){
         return false;
     }
 
-    if(sideC + sideA < sideB){
+    if(sideC + sideA <= sideB){
         return false;
     }
 
