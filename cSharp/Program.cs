@@ -15,9 +15,10 @@ namespace cSharp
             double trianglePerimeter = user.getPerimeter(sideA, sideB, sideC);
             double traingleArea = user.getArea(sideA, sideB, sideC);
 
-            
+
             Console.WriteLine("Perimeter:" + trianglePerimeter);
             Console.WriteLine("Area:" + traingleArea);
+            Console.WriteLine("Triangle Type: " + user.getType(sideA, sideB, sideC));
         }
 
         public double getSide(string sideName)
@@ -47,6 +48,25 @@ namespace cSharp
             area = Math.Pow(area,0.5);
             return area;
 
+        }
+
+        public string getType(double sideA, double sideB, double sideC)
+        {
+
+            //an equilateral triangle has 3 sides of equal length
+            if(sideA == sideB && sideA == sideC && sideC == sideB)
+            {
+                return "Equilateral";
+            }
+
+            //Scalene has 3 sides all of unequal length
+            if(sideA != sideB && sideB != sideC && sideC != sideA)
+            {
+                return "Scalene";
+            }
+
+            //Isoscele has 2 sides equal and one unequal in length
+            return "Isoscele";
         }
     }
 }
