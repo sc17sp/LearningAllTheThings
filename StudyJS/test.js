@@ -17,6 +17,7 @@ describe("triangleCheck", function(){
         assert.isTrue( triangleCheck(3, 3, 3), "traingle is an equailateral");
         assert.isTrue( triangleCheck(18, 30, 24), "Triangle is a scalene");
         assert.isFalse( triangleCheck(1, 23, 50000), "This does not work");
+        assert.isFalse( triangleCheck(1,2,3), "This does not work");
     });
 });
 // getPerimeter()

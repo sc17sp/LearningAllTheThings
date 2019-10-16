@@ -1,5 +1,7 @@
-function pow(x, n){
-    return null;
+let user = {
+    name: "John",
+    age: 30,
 }
+let key = prompt("What do you wamt to kmow about the user", "name");
 
-alert("test");
+alert(user[key]);
